@@ -10,16 +10,16 @@ const config = {
     ssl: true
 }
 
-const configLocal = {
-    host: 'localhost',
-    port: '5432',
+// const configLocal = {
+//     host: 'localhost',
+//     port: '5432',
 
-    database: 'notas_ejemplo',
-    user: 'postgres',
-    password: '200113'
-}
+//     database: 'notas_ejemplo',
+//     user: 'postgres',
+//     password: '200113'
+// }
 
 const pgp = pgPromise({})
-//const db = pgp(configLocal)
 const db = pgp(config)
+//const db = pgp(config)
 exports.db = db
