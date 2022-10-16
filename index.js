@@ -16,7 +16,7 @@ app.use(require('./ruotes/routes'))
 
 //Ejecución del servidor web
 app.get('*/*', function (req, res) {
-  res.send('Hello World')
+  res.send('Hello')
 })
 app.listen(app.get('port'))
 console.log ('Direccion de acceso: \nhttps://localhost:'+app.get('port'))
